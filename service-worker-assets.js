@@ -61,7 +61,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-OmyMpBSXugQkDDwe7U8JNbR5e58DqO5zzUOwb\/Trc1g=",
+      "hash": "sha256-NartdWrGEzI2jN5EjxCmY39YbbctaJMtXNcDBgVKci4=",
       "url": "index.html"
     },
     {
@@ -829,5 +829,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "H8Ia1Nbr"
+  "version": "NRFd5FPG"
 };
