@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+
 <PageTitle>Animation Samples</PageTitle>
 <div class="page">
     <div class="sidebar shadow">
@@ -7,6 +9,10 @@
 
     <main>
         <div class="top-row px-4 appbar shadow">
+
+            <button class="btn btn-sm btn-light" @onclick="ThemeToggle">
+               @($"Dark: {isMudDarkMode}")
+            </button>
         </div>
 
         <article class="content px-4">
@@ -16,5 +22,30 @@
 </div>
 @code
 {
-    
+    private bool isMudDarkMode;
+
+    private bool GetDarkThemeValue() => true;
+
+    protected override void OnInitialized()
+    {
+        isMudDarkMode = GetDarkThemeValue();
+        SetSyncTheme(isMudDarkMode);
+    }
+    private void ThemeToggle()
+    {
+        isMudDarkMode = !isMudDarkMode;
+        SetSyncTheme(isMudDarkMode);
+    }
+
+    private void SetSyncTheme(bool isSyncDark)
+    {
+        if (isSyncDark)
+        {
+            JSRuntime.InvokeAsync<string>("setTheme", "bootstrap5-dark");
+        }
+        else
+        {
+            JSRuntime.InvokeAsync<string>("setTheme", "bootstrap5");
+        }
+    }
 }
