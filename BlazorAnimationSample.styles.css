@@ -39,7 +39,7 @@ main[b-471gqs5pi2] {
 
 @media (max-width: 640.98px) {
     .top-row:not(.auth)[b-471gqs5pi2] {
-        display: none;
+        /*display: none;*/
     }
 
     .top-row.auth[b-471gqs5pi2] {

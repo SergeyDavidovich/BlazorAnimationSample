@@ -105,11 +105,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-Huyy7\/xBvA92IISK65w\/eSZHW4jeeIqVz9MsBzklQ4g=",
+      "hash": "sha256-fgOxkgIjNg2Kjst9kEezJWATfM6ZnDoWQmBC52WA0XQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-DVq1qs\/OuErVQ\/aZA69MDNVCc6TiNdNGMAlIF2OOE\/w=",
+      "hash": "sha256-UPfHWr\/eKnSBGIZe7zMcwNop1RbW7kPVYmdZ2WeaU6M=",
       "url": "_framework\/BlazorAnimationSample.dll"
     },
     {
@@ -437,7 +437,7 @@
       "url": "_framework\/System.Xml.ReaderWriter.dll"
     },
     {
-      "hash": "sha256-hwxi5BFi1WurSccklU0cgc0uYJWa+IQcO4m9wheth7U=",
+      "hash": "sha256-T19BJx+wwoBrc8RenN09UD+pJtQvtsubpHs\/uCyCuv8=",
       "url": "BlazorAnimationSample.styles.css"
     },
     {
@@ -829,5 +829,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "SwkJVeWV"
+  "version": "zv6uRL0S"
 };
