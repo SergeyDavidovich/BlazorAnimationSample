@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="BlazorAnimationSample.styles.css" rel="stylesheet" />
 
-    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5-dark.css" rel="stylesheet" />
+    <link id="theme" href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
 
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
@@ -44,6 +44,17 @@
     <script src="_content/Blazorise.Animate/blazorise.animate.js?v=1.1.6.0"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    
+    <script>
+        function setTheme(theme) {
+            //document.getElementsByTagName('body')[0].style.display = 'none';
+
+            let synclink = document.getElementById('theme');
+            synclink.href = '_content/Syncfusion.Blazor.Themes/' + theme + '.css';
+
+            //setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+        }
+    </script>
 </body>
 
 </html>
