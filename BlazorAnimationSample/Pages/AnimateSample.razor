@@ -1,7 +1,7 @@
 ﻿@page "/animationsample"
 <h3>Animation Samples</h3>
 
-<SfGrid @ref="@grid" DataSource="@Orders" AllowPaging="true" Height="60vh" Width="80vh" EnableAdaptiveUI="true">
+@*<SfGrid @ref="@grid" DataSource="@Orders" AllowPaging="true" Height="60vh" Width="80vh" EnableAdaptiveUI="true">
     <GridColumns>
         <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Center" Width="15%"></GridColumn>
         <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="30%"></GridColumn>
@@ -9,10 +9,33 @@
         <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="25%"></GridColumn>
     </GridColumns>
 </SfGrid>
+*@
+
+<SfGrid @ref="grid" ID="ThisGrid" DataSource="@Orders" TValue="@Order" AllowPaging="true" EnableAdaptiveUI="false" AdaptiveUIMode="AdaptiveMode.Mobile"
+        AllowGrouping="true" AllowPdfExport="true" EnableVirtualization="false" EnablePersistence="false"
+        AllowFiltering="true" AllowSelection="true"
+        Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "PdfExport"})">
+    <GridPageSettings CurrentPage=1 PageSizes="@pagesizes" PageSize="5"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderID) MaxWidth="60" HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})"
+                    TextAlign="TextAlign.Center"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerID) MaxWidth="60" HeaderText="Customer Name" ValidationRules="@(new ValidationRules{ Required=true})"
+                    TextAlign="TextAlign.Center"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText="Order Date" EditType="EditType.DatePickerEdit" Format="d"
+                    TextAlign="TextAlign.Center" Type="ColumnType.Date" MaxWidth="60"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Center" EditType="EditType.NumericEdit"
+                    MaxWidth="40"></GridColumn>
+    </GridColumns>
+
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="EditMode.Dialog"></GridEditSettings>
+</SfGrid>
+
+
 
 @code {
     SfGrid<Order> grid;
     public List<Order> Orders { get; set; }
+    public object[] pagesizes = new object[] { 5, 10, 25, "All" };
 
     protected override void OnInitialized()
     {
