@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Scheduler.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Blazorise.Animate" Version="1.1.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.2" PrivateAssets="all" />
@@ -22,18 +18,6 @@
 
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\Scheduler.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\Scheduler.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\Scheduler.razor" />
   </ItemGroup>
 
 </Project>
