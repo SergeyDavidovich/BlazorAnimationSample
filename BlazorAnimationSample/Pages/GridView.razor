@@ -1,8 +1,8 @@
 ﻿@page "/gridview"
 <h1>Gridview</h1>
 @using Syncfusion.Blazor.Grids
-<Animate Animation="Animations.FadeDownLeft" DurationMilliseconds="400">
-    <SfGrid @ref="grid" ID="ThisGrid" DataSource="@Orders" TValue="@Order" AllowPaging="true" EnableAdaptiveUI="true" AdaptiveUIMode="AdaptiveMode.Mobile"
+<Animate Animation="Animations.ZoomOutUp" DurationMilliseconds="400">
+    <SfGrid @ref="grid" ID="ThisGrid" DataSource="@Orders" TValue="@Order" AllowPaging="true" EnableAdaptiveUI="true " AdaptiveUIMode="AdaptiveMode.Mobile"
             AllowGrouping="true" AllowPdfExport="true" EnableVirtualization="false" EnablePersistence="false"
             AllowFiltering="true" AllowSelection="true"
             Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "PdfExport"})">
