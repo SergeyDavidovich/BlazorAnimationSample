@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BlazorAnimationSample.dll": "sha256-H8PBK9DWBNugBpn4fSoQTm8jWmmwR+I\/LPZz6eOIvAY=",
+      "BlazorAnimationSample.dll": "sha256-afgFfuTFm4CsmuEsmlY8F1jYARJ9JNiEIZFeBZfsed4=",
       "Blazorise.Animate.dll": "sha256-MP3ePKVccdIiqArZeTJlKoRm7Brx2C6iN8fZPArII58=",
       "Blazorise.dll": "sha256-yPFIk4KNmmKL5w8eQ2BrF9wgtQhZaBL+cz+AxTj7c4A=",
       "Microsoft.AspNetCore.Components.dll": "sha256-vzd6QJCE0gHQyUn7x2kDf+fylpGpKMRH+Nwj5Iu3OMY=",
