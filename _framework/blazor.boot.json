@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorAnimationSample",
   "resources": {
-    "hash": "sha256-4LpCZPBWDpVv9WMZ3yWZz9YpqGlgzamSOusBjdZ6Hig=",
+    "hash": "sha256-99u52QgJUpxAWSO9j9IqzyO5hkR+2GzVfQ/pieULCuI=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.45ykigla5r.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "BlazorAnimationSample.wasm": "sha256-pXeALIEBLzzxV8cr1/+TtHp/oXM928+ULuCR7i+EP/U=",
+      "BlazorAnimationSample.wasm": "sha256-oHzf0SEwlEYomWhUgrqyn5FveiIN2XupgAnwOyClsXc=",
       "Blazorise.Animate.wasm": "sha256-SK/Fyg0MPi/D7KS9x30nsOhEt0D+FVusDH5oWi8Hsbg=",
       "Blazorise.Licensing.wasm": "sha256-vmNGzxXoM2MA6rFUp99OvXbE3FJlYnUDr6zyA1Nc3Xc=",
       "Blazorise.wasm": "sha256-J6AcopcR9421THA0nMQH9gvTwbftk35Pr3RShyOhZKg=",
